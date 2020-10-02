@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vicente Andani</title>
+</head>
+<body>
+    <h1>FORM VICENTE</h1><br>
+    <strong>Información sobre el producto</strong><br><br>
+    <form name="primer_form" action="" method="">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="desc">Descripción</label><br>
+            <textarea id="textarea" name="textarea"></textarea><br><br>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto"><br><br>
+            <input type="checkbox" id="contador" value="contador"> <label for="contador">Añadir contador de visitas</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="precio">Precio</label>
+            <input type="text" id="precio" name="precio" size="4"> €
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="impuestos">Impuestos</label>
+            <select name="impuestos" id="impuestos">
+                <option value="volvo" selected>4%</option>
+                <option value="saab">7%</option>
+                <option value="mercedes">16%</option>
+                <option value="audi">25%</option>
+              </select><br><br>
+            <label for="promocion">Promoción</label><br>
+            <input type="radio" id="ninguno" name="promocion" value="ninguno">
+            <label for="ninguno">Ninguno</label><br>
+            <input type="radio" id="free" name="promocion" value="free">
+            <label for="free">Transporte gratuito</label><br>  
+            <input type="radio" id="descuento" name="promocion" value="descuento">
+            <label for="descuento">Descuento 5%</label><br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
