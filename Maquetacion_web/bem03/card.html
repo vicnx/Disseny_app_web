@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
     <title>Document Card Vicente Andani</title>
 </head>
 <body>
-    <article>
-        <img src="" alt="">
-        <h1></h1>
-        <p></p>
-        <button></button>
+    <article class="card">
+        <section class="card__header">
+            <img class="card__header_imagen" src="card.png" alt="card">
+            <h1 class="card__header_titulo">Card title</h1>
+        </section>
+        <section class="card__body">
+            <p class="card__body__descripcion">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </section>
+        <section class="card__footer">
+            <button class="card__footer__boton">Go somewhere</button>
+        </section>
     </article>
 </body>
 </html>
