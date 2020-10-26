@@ -20,10 +20,10 @@ p::first-letter{
 
 div::before{
     counter-increment: div;
-    content: counter(div)" - ";
+    content: "Div: "counter(div)" - ";
 }
 
 p::before{
     counter-increment: p;
-    content: counter(p)" - ";
+    content: "Párrafo: "counter(p)" - ";
 }
