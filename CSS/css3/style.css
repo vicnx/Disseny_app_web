@@ -1,0 +1,29 @@
+body{
+    counter-reset: div p;
+
+}
+.note {
+    background-color: AliceBlue;
+    border: 1px solid #777;
+    box-shadow: 4px 4px 2px #333;
+    margin: 10px;
+    padding: 5px;
+}
+
+section p:first-of-type{
+    font-weight: bold;
+}
+
+p::first-letter{
+    color: red;
+}
+
+div::before{
+    counter-increment: div;
+    content: counter(div)" - ";
+}
+
+p::before{
+    counter-increment: p;
+    content: counter(p)" - ";
+}
