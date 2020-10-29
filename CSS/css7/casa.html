@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Una casa con CSS</title>
+  <style type="text/css">
+    div{
+      position: absolute;
+      border: solid black 3px;
+      padding: 5px;
+    }
+
+    div.casa{
+      height: 250px;
+      width: 300px;
+      background-color: grey;
+      top:100px;
+      left:150px;
+    }
+    div.tejado{
+      bottom: 260px;
+      left: -18px;
+      height: 15px;
+      width: 330px;
+      background-color: purple;
+    }
+    div.puerta{
+      height: 80px;
+      width: 50px;
+      background-color: brown;
+      bottom: -3px;
+      left: 125px;
+    }
+    .pany{
+      top:40px;
+      border:0px;
+    }
+    div.ventana{
+      width: 30px;
+      height: 30px;
+      background-color: green;
+    }
+    div.ventana1{
+      left: 35px;
+      top: 20px;
+    }
+
+    div.ventana2{
+      left: 235px;
+      top: 20px;
+    }
+
+    div.ventana3{
+      left: 35px;
+      top: 155px;
+    }
+
+    div.ventana4{
+      left: 235px;
+      top: 155px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="h1" class="casa">
+    <div class="tejado"></div>
+    <div class="ventana ventana1"></div>
+    <div class="ventana ventana2"></div>
+    <div class="ventana ventana3"></div>
+    <div class="ventana ventana4"></div>
+    <div class="puerta"><div class="pany">º</div></div>
+  </div>
+</body>
+</html>
+<!--
+<div id="h1" class="casa">
+   <div class="tejado" />
+   <div class="puerta"><h1>door</h1></div>
+   <div class="ventana1"></div>
+   <div class="ventana2"></div>
+</div>
+-->
