@@ -1,16 +1,13 @@
-body{
+.body{
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: grid;
-    /* grid-auto-rows: minmax(100px, auto); */
+    height: 100vh;
     grid-template-rows: 10% auto 10%;
     grid-template-columns: 10% auto 10%;
-    /* grid-template-rows: 10% auto 10%; */
-    /* grid-template-columns: 10% auto 10%; */
     grid-template-areas: 
     "header         header      header"
-    "sidebar-1   main       sidebar-2"
+    "sidebar-1      main       sidebar-2"
     "footer         footer      footer";
 }
 
@@ -18,33 +15,21 @@ body{
     background-color: tomato;
     grid-area: header;
 }
-.main{
-    /* grid-area: main; */
-    /* width: 100%; */
-    /* display: grid;
-    grid-template-columns: 10% auto 10%; */
-    /* grid-template-rows: 100%; */
-    /* grid-template-areas: 
-    "sidebar     main_content      sidebar"
-    "sidebar     main_content      sidebar"
-    "sidebar     main_content      sidebar" */
-}
-.main__aside--left{
+.aside--left{
     background-color: blue;
     grid-area: sidebar-1;
 
 }
-.main__aside--right{
+.aside--right{
     background-color: rgb(0, 0, 170);
     grid-area: sidebar-2;
 
 }
-.main__content{
+.main{
     background-color: green;
     grid-area: main;    
 }
 .footer{
     background-color: red;
     grid-area: footer;
-
 }
