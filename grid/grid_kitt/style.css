@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    width: 60%;
+    margin: 50px;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% auto 10%;
+    grid-row-gap: 60px;
+    grid-column-gap:20px;
+    grid-template-areas: 
+    "alt            grid3       aux"
+    "oil_press      grid3       sat_comm"
+    "oil_temp       grid3       acc"
+    "egt            grid2       radar"
+    "fuel           grid2       mp1";
+    align-items: center;
+    justify-items: center;
+}
+.grid2__left{
+    background-color: yellow;
+    padding: 15px;
+    margin :2px;
+}
+
+.grid2__right{
+    padding: 30px 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.grid2{
+    display: grid;
+    grid-template-areas: 
+    "grid2__left   grid2__right__normal"
+    "grid2__left   grid2__right__auto"
+    "grid2__left   grid2__right__pursuit";
+    grid-area: grid2;
+    grid-column-gap: 30px;
+}
+.grid2__right--normal{
+    background-color: rgba(0, 128, 0, 0.459);
+    grid-area: grid2__right__normal;
+}
+.grid2__right--auto{
+    background-color: rgba(255, 255, 0, 0.418);
+    grid-area: grid2__right__auto;
+}
+.grid2__right--pursuit{
+    background-color: rgba(255, 0, 0, 0.205);
+    grid-area: grid2__right__pursuit;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center; 
+    font-weight: bold;  
+}
+.alt{
+    grid-area: alt;
+    background-color: yellow;
+}
+.oil_press{
+    grid-area: oil_press;
+    background-color: yellow;
+}
+.oil_temp{
+    grid-area: oil_temp;
+    background-color: red;
+}
+.egt{
+    grid-area: egt;
+    background-color: red;
+}
+.fuel{
+    grid-area: fuel;
+    background-color: red;
+}
+.aux{
+    grid-area: aux;
+    background-color: yellow;
+}
+.sat_comm{
+    grid-area: sat_comm;
+    background-color: yellow;
+}
+.acc{
+    grid-area: acc;
+    background-color: red;
+}
+.radar{
+    grid-area: radar;
+    background-color: red;
+}
+.mp1{
+    grid-area: mp1;
+    background-color: red;
+}
