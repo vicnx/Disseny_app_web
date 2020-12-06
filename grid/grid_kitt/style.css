@@ -106,3 +106,33 @@ body{
     grid-area: mp1;
     background-color: red;
 }
+.bars{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    grid-gap: 20px;
+    
+    grid-area:grid3;
+    height: 100%;
+
+}
+.bars__bar{
+    display: grid;
+    grid-template-rows: repeat(18,5px);
+    grid-row-gap: 18px;
+}
+.bars__bar__inside{
+    padding: 10px 50px;
+    background-color: rgba(143, 0, 0, 0.719);
+
+
+}
+/* .bars__bar{
+    background-color: rgba(143, 0, 0, 0.719);
+}
+.bars__bar2{
+    background-color: rgba(143, 0, 0, 0.719);
+}
+.bars__bar3{
+    background-color: rgba(143, 0, 0, 0.719);
+} */
