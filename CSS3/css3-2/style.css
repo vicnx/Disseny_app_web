@@ -1,0 +1,92 @@
+:root {
+    --color_card: white;
+    --icono__card: url('img/icono.png');
+    --icono__pdf: url('img/icono_pdf.png');
+    --icono__zip: url('img/icono_zip.jpg');
+    --border: 1px solid black;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_card);
+    border: var(--border);
+    padding: 20px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card a[href^="mailto"]::before{
+    content: "";
+    background-image: var(--icono__card);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card span a:last-child{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.card span{
+    margin-top: 20px;
+}
+
+.card__bg{
+    top: 0;
+    margin: 0;
+    position: absolute;
+    left: 150px;
+    text-align: right;
+    opacity: 0.3;
+    color: red;
+    transform: rotate(40deg);
+    font-size: 18px;
+}
+
+.card__bg::before{
+    /* content: "Vicente-Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani Vicente Andani"; */
+    content: "vicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andanivicente-andani-vicente-andani";
+}
+
+.info{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_card);
+    border: var(--border);
+    padding: 20px;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.info span{
+    margin-bottom: 20px;
+}
+
+.info a::before{
+    content: "";
+    background-image: var(--icono__pdf);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.info a{
+    font-style: italic;
+}
+.info a:last-child::before{
+    background-image: var(--icono__zip);
+}
+.info a:last-child{
+    font-weight: bold;
+    font-style: normal;
+}
