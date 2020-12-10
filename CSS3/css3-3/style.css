@@ -1,0 +1,17 @@
+body{
+    width: 400px;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+section h1:target{
+    background-color: yellow;
+}
