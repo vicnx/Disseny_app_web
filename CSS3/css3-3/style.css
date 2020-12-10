@@ -1,7 +1,12 @@
+:root{
+    --bg_color: yellow;
+    --border: 1px solid black;
+}
+
 body{
     width: 400px;
     height: fit-content;
-    border: 1px solid black;
+    border: var(--border);
     padding: 20px;
 }
 
@@ -13,5 +18,5 @@ body{
 }
 
 section h1:target{
-    background-color: yellow;
+    background-color: var(--bg_color);
 }
