@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <title>Transform CSS :: DIW</title>
   <style media="screen">
+
+    :root{
+      --transition: transform 0.5s ease;
+      --color: tomato;
+    }
   .animate {
       color: #fff;
       text-align: center;
       height: 150px;
       width: 150px;
-      background-color: tomato;
+      background-color: var(--color);
       margin: 10px;
       float: left;
-      transition: transform 0.5s ease;
+      transition: var(--transition);
   }
 
   .rotate{

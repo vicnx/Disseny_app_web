@@ -7,10 +7,14 @@
   <title>Document CSS3</title>
   <style media="screen">
 
-  .divContainer {
+    :root{
+      --border_gray: 5px solid #7f7f7f;
+      --border_orange: 5px solid #ffaa00;
 
+    }
+  .divContainer {
     width:500px;
-    border:5px solid #7f7f7f;
+    border:var(--border_gray);
   }
   .divBox {
     box-sizing: border-box;

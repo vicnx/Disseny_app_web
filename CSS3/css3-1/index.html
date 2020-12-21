@@ -6,8 +6,12 @@
     <title>CSS3 ex1</title>
     <script src="prefixfree.min.js"></script>
     <style>
+        :root{
+            --font : .8em Verdana, Arial, Helvetica, sans-serif;
+            --shadow: 0px 0px 10px rgba(10,20,30,.8);
+        }
         body {
-            font: .8em Verdana, Arial, Helvetica, sans-serif;
+            font: var(--font)
         }
         h1, p {
             margin: 0;
@@ -16,7 +20,7 @@
             width: 400px;
             padding: 10px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(10,20,30,.8);
+            box-shadow: var(--shadow);
         }
     </style>
 </head>

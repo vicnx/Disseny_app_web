@@ -6,12 +6,17 @@
     <title>css3-9</title>
     <style>
 
+        :root{
+            --verdana:Verdana, Geneva, Tahoma, sans-serif; 
+            --text_shadow: 2px 2px 1px rgb(4, 250, 57);
+        }
+
         @font-face {
             font-family: "Ratih_Hyun";
             src: url('Ratih_Hyun.ttf');
         } 
         .tipo1{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: var(--verdana);
             font-style: italic;
             font-size: 20px;
         }
@@ -34,7 +39,7 @@
         }
         .tipo2 h1{
             font-weight:900;
-            text-shadow: 2px 2px 1px rgb(4, 250, 57); 
+            text-shadow: var(--text_shadow)
         }
         .tipo2 p{
             font-size: 1.8rem;

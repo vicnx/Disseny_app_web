@@ -11,11 +11,14 @@
       border-style: dotted;
       border-width: 10px;
       display: block;
-      width: 200px;
-      transition: 0.5s ;
+      width: fit-content;
+      padding-right: 50px;
+      transition: background-color 0.5s, border 0.5s, font-size 1s;
+      /* transition: border 0.5s; */
     }
 
   .box:hover {
+    font-size: 50px;
     border: var(--border);
     border-radius: 10px;
     background-color: coral;

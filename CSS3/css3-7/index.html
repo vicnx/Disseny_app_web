@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS3 7</title>
     <style>
+        :root{
+            --logo: url(img/logo.png);
+            --pikachu: url(img/pikachu.png);
+            --coche: url(img/coche.png);
+            --textura: url(img/textura.jpg);
+
+        }
         .card{
             width: 700px;
             height: 200px;
-            background-image: url(img/logo.png),url(img/pikachu.png),url(img/coche.png),url(img/textura.jpg);
+            background-image: var(--logo),var(--pikachu),var(--coche),var(--textura);
             background-position: right bottom,right top,left bottom, right top;
             background-size: 250px, 100px, 150px, 100%;
             background-repeat: no-repeat;
