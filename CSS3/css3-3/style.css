@@ -17,6 +17,6 @@ body{
     list-style: none;
 }
 
-section h1:target{
+section h1:target span{
     background-color: var(--bg_color);
 }
