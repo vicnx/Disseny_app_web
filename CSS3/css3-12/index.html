@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animar dos elementos - Vicente Andani</title>
+    <style>
+        :root{
+            --color: rgb(0, 194, 201);
+            --shadow: 20px 20px 10px 0px rgb(56, 248, 255);
+            --text_shadow: 2px 2px 5px rgb(4, 250, 57);
+            --text_shadow2: 5px 5px 5px rgb(250, 4, 4);
+            --text_shadow3: 10px 10px 5px rgb(4, 250, 197);
+        }
+        section{
+            margin: 50px;
+            margin-bottom: 200px;
+        }
+        .cuadrado{
+            background-color: var(--color);
+            width: 200px;
+            height: 200px;
+            box-shadow: var(--shadow);
+        }
+        .texto{
+            margin-top: 50px;
+            font-family: monospace;
+            font-size: 40px;
+            text-shadow: var(--text_shadow);
+            display: inline-block;
+            animation: rotate 2s linear 0s infinite,change_text_shadow 2s linear 0s infinite,change_color 2s linear 0s infinite reverse;
+            color: red;
+        }
+        
+
+        @keyframes rotate {
+            from {transform:rotate(0deg);}
+            to {transform:rotate(360deg);}
+        }
+        @keyframes change_text_shadow{
+            0% {text-shadow: var(--text_shadow);}
+            25% {text-shadow: var(--text_shadow2);}
+            50% {text-shadow: var(--text_shadow3);}
+            100% {text-shadow: var(--text_shadow);}
+        }
+        @keyframes change_color {
+            0%   {color: red;}
+            25%  {color: yellow;}
+            50%  {color: blue;}
+            100% {color: green;}
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <span class="texto">VICENTE</span>
+            
+        </section>
+        <section class="cuadrado">
+
+        </section>
+    </main>
 </body>
 </html>
