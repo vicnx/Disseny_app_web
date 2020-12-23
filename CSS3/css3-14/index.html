@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>mask :: DIW</title>
+  <style>
+    @supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
+      div{
+  display:inline-block;
+  margin:30px;
+}
+.mascara-0{
+  mask-image: url(css3.14a.png);
+  mask-repeat: no-repeat;
+  mask-size: 80%;
+  -webkit-mask-image: url(css3.14a.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 80%;
+
+}
+.mascara-1{
+ 
+}
+.mascara-2{
+ }
+.mascara-3{
+}
+.mascara-4{
+}
+  /* code that requires mask-image here. */
+}
+
+</style>
+</head>
+<body>
+  <div>
+  <figure>
+  <img class="mascara-1" src="clip-demo.jpg" alt="DIW" width="300">
+  <figcaption><strong>mask-*?</strong></figcaption>
+    </figure>
+ </div>
+<div>
+  <img class="mascara-2" src="clip-demo.jpg" alt="DIW" width=300>
+  <figcaption><strong>mask-*?</strong></figcaption>
+</div>
+<div>
+  <img class="mascara-0" src="clip-demo.jpg" alt="DIW" width=300>
+  <figcaption><strong>mask-*?</strong></figcaption>
+</div>
+<div>
+  <img class="mascara-3" src="clip-demo.jpg" alt="DIW" width=300>
+  <figcaption><strong>mask-*?</strong></figcaption>
+</div>
+<div>
+  <img class="mascara-4" src="clip-demo.jpg" alt="DIW" width=300>
+  <figcaption><strong>mask-*?</strong></figcaption>
+</div>
+</body>
+</html>
