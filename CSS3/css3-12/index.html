@@ -21,6 +21,7 @@
             width: 200px;
             height: 200px;
             box-shadow: var(--shadow);
+            animation: move 2s linear 0s infinite, rotate 5s linear 0s infinite;
         }
         .texto{
             margin-top: 50px;
@@ -49,6 +50,17 @@
             50%  {color: blue;}
             100% {color: green;}
         }
+
+        @keyframes move {
+            0% {margin-left: 0px;}
+            25% {margin-left: 250px;}
+            50% {margin-left: 500px;}
+            75% {margin-left: 250px;}
+            100% {margin-left: 0px;}
+        }
+
+
+
     </style>
 </head>
 <body>
