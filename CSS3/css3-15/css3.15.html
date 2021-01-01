@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Filters</title>
+  <style>
+    :root{
+      --width: 500px;
+      --shadow: 10px 10px 15px red;
+    }
+    @keyframes grayscale {
+      0% {filter:grayscale(0%)  ;}
+      25% {filter: grayscale(50%)  ;}
+      50% {filter: grayscale(100%)  ;}
+      75% {filter: grayscale(50%)  ;}
+      100% {filter:grayscale(0%)  ;}
+    }
+    @keyframes blur {
+      0% {filter:blur(0px)  ;}
+      25% {filter: blur(5px)  ;}
+      50% {filter: blur(10px)  ;}
+      75% {filter: blur(5px)  ;}
+      100% {filter:blur(0px)  ;}
+    }
+
+    @keyframes all {
+      0% {filter:grayscale(90%) blur(10px);  ;}
+      25% {filter: brightness(0.4) drop-shadow(var(--shadow));}
+      50% {filter: hue-rotate(90deg);}
+      75% {filter: opacity(25%) invert(75%);}
+      100% {filter:brightness(0.4) drop-shadow(var(--shadow)) blur(5px);}
+    }
+
+    img{
+      width: var(--width);
+    }
+    .filter1{
+      animation: grayscale 2s linear 0s infinite
+    }
+    .filter2{
+      animation: blur 2s linear 0s infinite
+    }
+
+    .filter3{
+      filter: sepia(100%);
+    }
+
+    .filter4{
+      filter:grayscale(90%) blur(10px);
+    }
+
+    .filter5{
+      filter:brightness(0.4) drop-shadow(var(--shadow));
+    }
+
+    .filter6{
+      filter:brightness(0.4) drop-shadow(var(--shadow)) blur(5px);
+    }
+
+    .filter7{
+      filter:opacity(25%) invert(75%)
+    }
+
+    .filter8{
+      filter: hue-rotate(90deg)
+    }
+
+    .filter9{
+      filter: sepia(80%) hue-rotate(90deg)
+    }
+    .filter10{
+      animation: all 2s linear 0s infinite
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+  <li>filter: GRAYSCALE WITH ANIMATION 0-100%;<br><img class="filter1" src="css3.15b.jpg" alt=""></li>
+  <li>filter: BLUR WITH ANIMATION 0px - 10px <br><img class="filter2" src="css3.15b.jpg" alt=""></li>
+  <li>filter: sepia(100%);<br><img class="filter3" src="css3.15c.jpg" alt=""></li>
+  <li>filter: grayscale(0.5) blur(10px)<br><img class="filter4" src="css3.15d.jpg" alt=""></li>
+  <li>filter: brightness(0.4) drop-shadow(var(--shadow)) <br><img class="filter5" src="css3.15e.jpg" alt=""></li> 
+  <li>filter: brightness(0.4) drop-shadow(var(--shadow)) blur(5px)<br><img class="filter6" src="css3.15b.jpg" alt=""></li>
+  <li>filter: opacity(25%) invert(75%)<br><img class="filter7" src="css3.15b.jpg" alt=""></li>
+  <li>filter: hue-rotate(90deg)<br><img class="filter8" src="css3.15c.jpg" alt=""></li>
+  <li>filter: sepia(80%) hue-rotate(90deg)<br><img class="filter9" src="css3.15d.jpg" alt=""></li>
+  <li>filter: ANIMACION JUNTANDO UNOS CUANTOS FILTROS<br><img class="filter10" src="css3.15e.jpg" alt=""></li>  
+</ul>
+</body></html>
