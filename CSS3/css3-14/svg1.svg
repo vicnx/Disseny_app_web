@@ -1,7 +1,1 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-    <mask id="maskid" maskUnits="objectBoundingBox">
-    <polygon stroke="#FFFFFF" fill="#FFFFFF" stroke-miterlimit="10" points="56.609,171.248 116.609,207.586 189.849,165.896 182.243,136.037 
-    174.638,108.994 208.159,98.854 209.849,74.628 189.567,59.698 200.553,38.008 181.116,58.572 163.651,56.037 154.074,32.938 
-    156.328,54.064 148.722,59.98 148.44,83.642 118.018,92.375 78.863,111.248 69.286,144.769 50.13,86.177 "/>
-    </mask>
-</svg>
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="adjust" class="svg-inline--fa fa-adjust fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path></svg>
