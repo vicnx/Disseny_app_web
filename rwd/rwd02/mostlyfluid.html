@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MostlyFluid Vicente Andani</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 500px;
+    }
+    .box {
+      width: 100%;
+    }
+    .dark_blue {
+      background-color: blue;
+    }
+    .light_blue {
+      background-color: cadetblue;
+    }
+    .green {
+      background-color: chartreuse;
+    }
+    .red {
+      background-color: red;
+    }
+    .orange {
+      background-color: orange;
+    }
+    @media screen and (min-width: 450px) {
+      .light_blue,
+      .green {
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 550px) {
+      .dark_blue,
+      .light_blue {
+        width: 50%;
+      }
+      .green,
+      .red,
+      .orange {
+        width: 33.333333%;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+  <body>
+    <section class="container">
+      <section class="box dark_blue"></section>
+      <section class="box light_blue"></section>
+      <section class="box green"></section>
+      <section class="box red"></section>
+      <section class="box orange"></section>
+    </section>
+  </body>
+</html>

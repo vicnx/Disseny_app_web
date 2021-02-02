@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Shifter Vicente Andani</title>
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      height: 500px;
+    }
+    .box {
+      width: 100%;
+      height: 250px;
+    }
+    .dark_blue {
+      background-color: blue;
+    }
+    .light_blue {
+      background-color: cadetblue;
+    }
+    .green {
+      background-color: chartreuse;
+    }
+    .red {
+      background-color: red;
+    }
+    .orange {
+      background-color: orange;
+    }
+    @media screen and (min-width: 500px) {
+      .dark_blue {
+        width: 50%;
+      }
+      #container2 {
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .dark_blue {
+        width: 25%;
+        order: 1;
+      }
+      #container2 {
+        width: 50%;
+      }
+      .red {
+        width: 25%;
+        order: -1;
+      }
+    }
+
+    /* @media screen and (min-width: 700px) {
+      .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    } */
+  </style>
+  <body>
+    <section class="container">
+      <section class="box dark_blue"></section>
+      <section class="container" id="container2">
+        <section class="box light_blue"></section>
+        <section class="box green"></section>
+      </section>
+      <section class="box red"></section>
+    </section>
+  </body>
+</html>
