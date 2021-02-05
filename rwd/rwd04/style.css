@@ -78,7 +78,7 @@ display: none;
   }
   .navbar-toggle {
     display: none;
-}
+  }
   #chkToggle:checked + ul.main-nav {
     display: flex;
   }
