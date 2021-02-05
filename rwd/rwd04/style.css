@@ -16,7 +16,7 @@ body {
 }
 
 .main-nav {
-display: inline;
+
 }
 
 .nav-links,
@@ -80,7 +80,7 @@ display: none;
     display: none;
 }
   #chkToggle:checked + ul.main-nav {
-    display: block;
+    display: flex;
   }
   #chkToggle{
     display: none;
@@ -88,7 +88,6 @@ display: none;
 
   .main-nav {
     display: flex;
-    flex-direction: row;
     justify-content: right;
   }
 
