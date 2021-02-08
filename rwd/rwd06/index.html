@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>La imagen del gato cambia en width 900px y en 680px</p>
+    <picture>
+        <source srcset="rwd-kitten-large.png" media="(min-width: 900px)">
+        <source srcset="rwd-kitten-medium.png" media="(min-width: 680px)">
+        <img src="rwd-kitten-small.png" alt="MDN">
+    </picture>
+</body>
+</html>
