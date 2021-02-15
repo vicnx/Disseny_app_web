@@ -1,3 +1,25 @@
+@-webkit-keyframes iluminar {
+  from {
+    background-color: #666;
+    color: #eee;
+  }
+  to {
+    background-color: #888;
+    color: #fff;
+  }
+}
+
+@keyframes iluminar {
+  from {
+    background-color: #666;
+    color: #eee;
+  }
+  to {
+    background-color: #888;
+    color: #fff;
+  }
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -84,27 +106,5 @@ nav a:hover {
   background-color: #888;
   -webkit-animation: iluminar 0.4s linear;
   animation: iluminar 0.4s linear;
-}
-
-@-webkit-keyframes iluminar {
-  from {
-    background-color: #666;
-    color: #eee;
-  }
-  to {
-    background-color: #888;
-    color: #fff;
-  }
-}
-
-@keyframes iluminar {
-  from {
-    background-color: #666;
-    color: #eee;
-  }
-  to {
-    background-color: #888;
-    color: #fff;
-  }
 }
 /*# sourceMappingURL=screen.css.map */
