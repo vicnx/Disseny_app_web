@@ -1,3 +1,10 @@
+$icons: (
+  (icon-menu, "../images/menu.png", 0px, 0px, 30px, 32px),
+  (icon-news, "../images/news.png", 0px, -90px, 30px, 39px),
+  (icon-money, "../images/money.png", 0px, -100px, 50px, 54px),
+  (icon-contact, "../images/contact.png", 0px, 0px, 30px, 30px)
+);
+
 %button-block {
   box-sizing: border-box;
   width: 100%;
@@ -34,10 +41,10 @@ div {
       }
       button {
         @extend %button-block;
-        @if $theme == light{
+        @if $theme == light {
           background-color: darken($background_color, 10%);
           color: #eee;
-        }@else{
+        } @else {
           background-color: lighten($background_color, 20%);
           color: #eee;
         }
@@ -69,5 +76,16 @@ div {
         background-color: lighten($background_color, 20%);
       }
     }
+  }
+}
+i {
+  display: inline-block;
+}
+@each $name, $image, $X, $Y, $height, $width in $icons {
+  .#{$name} {
+    background-image: url("#{$image}");
+    background-position: $X $Y;
+    height: $height;
+    width: $width;
   }
 }
