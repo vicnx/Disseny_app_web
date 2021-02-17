@@ -34,6 +34,13 @@ div {
       }
       button {
         @extend %button-block;
+        @if $theme == light{
+          background-color: darken($background_color, 10%);
+          color: #eee;
+        }@else{
+          background-color: lighten($background_color, 20%);
+          color: #eee;
+        }
       }
     }
     @include responsive("medium") {
