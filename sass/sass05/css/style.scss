@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+$font-family: "Nunito", sans-serif;
+
+$sizes: (
+  "h1": 300%,
+  "h2": 200%,
+  "h3": 150%,
+);
+$weights: (
+  "bold": 700,
+  "light": 300,
+  "regular": 400,
+);
+$background_color: #2f7ecb;
+
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: map-get($weights, "regular");
+  font-size: 1rem;
+}
+
+@for $i from 1 through 3 {
+  h#{$i} {
+    font-weight: map-get($weights, "bold");
+    font-size: map-get($sizes, "h#{$i}");
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "header";
+@import "nav";
+
+section {
+  min-height: 20em;
+}
+
+@import "footer";

@@ -1,0 +1,17 @@
+footer {
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $background_color;
+    margin-bottom: 10px;
+    a img {
+      padding-right: 20px;
+      width: 3em;
+    }
+  }
+  p {
+    background-color: $background_color;
+    font-size: 80%;
+  }
+}

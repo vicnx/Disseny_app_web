@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  background-color: $background_color;
+  padding: 20px;
+  & img {
+    float: left;
+    width: 10%;
+  }
+  @for $i from 1 through 2 {
+    h#{$i} {
+      margin: 0;
+    }
+  }
+}
