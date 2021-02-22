@@ -66,6 +66,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  font-size: 110%;
   margin: 0;
   padding: 5px;
   font-weight: 400;
@@ -74,7 +75,6 @@ nav ul li {
 
 nav ul li:hover {
   font-weight: 700;
-  color: red;
 }
 
 nav ul li a {

@@ -11,13 +11,13 @@ nav {
     list-style: none;
     li {
       display: inline-block;
+      font-size: 110%;
       margin: 0;
       padding: 5px;
       font-weight: map-get($weights, "regular");
       color: black;
       &:hover {
         font-weight: map-get($weights, "bold");
-        color: red;
       }
       a {
         color: black;
